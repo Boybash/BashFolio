@@ -1,0 +1,34 @@
+.navSection {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  background: linear-gradient(100deg, #d7d7d7 50%, #000000 50%);
+}
+.navSection ul {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.navSection li {
+  list-style-type: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.navSection .list {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+}
+.hamburger {
+  width: 30px;
+}

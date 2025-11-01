@@ -1,0 +1,33 @@
+footer {
+  background-color: #1a1a1a;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.footerBack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+footer img {
+  width: 25px;
+}
+.footerLogo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+/* .footerReserved {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+} */

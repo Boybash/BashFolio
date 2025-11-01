@@ -1,0 +1,65 @@
+.contactSection {
+  background-color: #d7d7d7;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.contactSection div {
+  margin-top: 50px;
+}
+.contactSection h2 {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 5px solid black;
+  width: 250px;
+  margin: 20px auto;
+}
+.contactSection p {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.contatcLineBreaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.contactForm {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm input {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  /* width: 450px; */
+  outline: none;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: none;
+  border-right: none;
+  background-color: #d7d7d7;
+  position: relative;
+}
+.contactInputMessage {
+  height: 100px;
+  padding: 10px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.contactFormSubmit {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+.contactFormSubmit h3 {
+  cursor: pointer;
+}

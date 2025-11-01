@@ -1,0 +1,34 @@
+.heroSection {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 30px 20px; */
+  margin: 0 auto;
+}
+.heroDetails {
+  line-height: 10px;
+}
+.heroDetails h2 {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+.heroDetails h1 {
+  font-size: 40px;
+}
+.heroDetails h3 {
+  color: grey;
+}
+.heroIntro {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+}
+.heroIntro div {
+  margin: 0 auto;
+}
+.heroIntro p {
+  line-height: 30px;
+}
