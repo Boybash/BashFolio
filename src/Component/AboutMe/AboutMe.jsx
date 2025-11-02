@@ -10,7 +10,7 @@ const AboutMe = () => {
         id="about"
         className="bg-primary w-full mx-auto p-5 font-montserat"
       >
-        <Slide direction="top">
+        <Slide direction="left">
           <div className={styles.aboutmeIntro}>
             <h2 className="font-bold tracking-[0.5em]">ABOUT ME</h2>
             <p className="w-[600px] max-[630px]:w-[400px] max-[400px]:w-[250px]">
@@ -35,8 +35,8 @@ const AboutMe = () => {
           alt="Linebreaker"
         />
 
-        <Slide direction="left">
-          <div className={`${styles.aboutmeInfo} max-[700px]:flex-col`}>
+        <Slide direction="right">
+          <div className={`${styles.aboutmeInfo} max-[1100px]:flex-col`}>
             <div className="w-[500px] max-[630px]:flex max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center">
               <h2 className="font-bold text-xl text-left max-[630px]:mb-2">
                 Design
@@ -47,6 +47,7 @@ const AboutMe = () => {
                 job.
               </p>
             </div>
+
             <div className="w-[500px] max-[630px]:flex max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center">
               <h2 className="font-bold text-xl max-[630px]:mb-2">
                 Development

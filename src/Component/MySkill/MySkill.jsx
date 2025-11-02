@@ -11,6 +11,7 @@ import TypescriptLogo from "../../assets/TYPESCRIPT LOGO.png";
 import NodejsLogo from "../../assets/NODEJS LOGO.png";
 import TailwindLogo from "../../assets/icons8-tailwind-css-96.png";
 import MongodbLogo from "../../assets/MONGODB LOGO.png";
+import SqlLogo from "../../assets/SQL.png";
 import { Slide, Fade } from "react-awesome-reveal";
 const MySkill = () => {
   return (
@@ -101,6 +102,7 @@ const MySkill = () => {
                   />
                   <span className="text-center mt-2">NODEJS</span>
                 </div>
+
                 <div className="flex flex-col items-center">
                   <img
                     className="w-[50px] h-[50px]"
@@ -108,6 +110,15 @@ const MySkill = () => {
                     alt="MongodbLogo"
                   />
                   <span className="text-center mt-2">MONGODB</span>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <img
+                    className="w-[50px] h-[50px]"
+                    src={SqlLogo}
+                    alt="SQLLogo"
+                  />
+                  <span className="text-center mt-2">MySQL</span>
                 </div>
               </div>
             </Slide>
