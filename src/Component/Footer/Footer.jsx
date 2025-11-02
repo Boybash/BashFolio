@@ -15,8 +15,15 @@ const Footer = () => {
     <>
       <footer className="mb-4 w-full">
         <div className={styles.footerBack}>
-          <img onClick={scrollToTop} src={UpArrow} alt="UpArrow" />
-          <h4 onClick={scrollToTop}>BACK TO TOP</h4>
+          <img
+            className="cursor-pointer"
+            onClick={scrollToTop}
+            src={UpArrow}
+            alt="UpArrow"
+          />
+          <h4 className="cursor-pointer" onClick={scrollToTop}>
+            BACK TO TOP
+          </h4>
         </div>
         <div className={styles.footerLogo}>
           <img src={FacebookLogo} alt="FacebookLogo" />

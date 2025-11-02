@@ -2,22 +2,32 @@ import React from "react";
 import Line from "../../assets/Line 10.png";
 import LineBreaker from "../../assets/separatorBlack 1.png";
 import styles from "./styles.module.css";
-
+import Slider from "react-slick";
 const AboutMe = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <section
         id="about"
         className="bg-primary w-full mx-auto p-5 font-montserat"
       >
-        <div className={styles.aboutmeIntro}>
-          <h2 className="font-bold tracking-[0.5em]">ABOUT ME</h2>
-          <p className="w-[600px] max-[630px]:w-[400px] max-[400px]:w-[250px]">
-            Fuelled by curiosity and driven by creativity, I craft digital
-            experiences that are both functional and beautiful. Let's build
-            something amazing together!
-          </p>
-        </div>
+        <Slider {...settings}>
+          <div className={styles.aboutmeIntro}>
+            <h2 className="font-bold tracking-[0.5em]">ABOUT ME</h2>
+            <p className="w-[600px] max-[630px]:w-[400px] max-[400px]:w-[250px]">
+              Fuelled by curiosity and driven by creativity, I craft digital
+              experiences that are both functional and beautiful. Let's build
+              something amazing together!
+            </p>
+          </div>
+        </Slider>
         <div className={styles.aboutmeExplore}>
           <img src={Line} alt="line" />
           <h2 className="font-bold text-xl">Explore</h2>
@@ -74,21 +84,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-
-// service cloud.firestore {
-//   match /databases/{database}/documents {
-
-//     // This rule allows anyone with your Firestore database reference to view, edit,
-//     // and delete all data in your Firestore database. It is useful for getting
-//     // started, but it is configured to expire after 30 days because it
-//     // leaves your app open to attackers. At that time, all client
-//     // requests to your Firestore database will be denied.
-//     //
-//     // Make sure to write security rules for your app before that time, or else
-//     // all client requests to your Firestore database will be denied until you Update
-//     // your rules
-//     match /{document=**} {
-//       allow read, write: if request.time < timestamp.date(2025, 10, 15);
-//     }
-//   }
-// }
