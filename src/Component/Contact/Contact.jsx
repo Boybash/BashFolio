@@ -4,6 +4,7 @@ import LineBreaker from "../../assets/separatorBlack 1.png";
 import Line from "../../assets/Line 10.png";
 import Logo from "../../assets/bash logo.png";
 import * as yup from "yup";
+import { Fade, Slide } from "react-awesome-reveal";
 const Contact = () => {
   const [formData, setformData] = useState({
     name: "",
@@ -59,23 +60,28 @@ const Contact = () => {
   return (
     <>
       <section id="contact" className={`${styles.contactSection} w-full`}>
-        <div>
-          <h2 className="font-bold tracking-[0.5em]">CONTACT</h2>
-        </div>
+        <Fade>
+          <div>
+            <h2 className="font-bold tracking-[0.5em]">CONTACT</h2>
+          </div>
+        </Fade>
 
-        <div className="w-[600px] flex flex-col items-center justify-center m-auto max-[630px]:w-[400px] max-[400px]:w-[250px]">
-          <p>
-            - Let's connect! Whether you have a question, a project idea, or
-            just want to say hello, I'd love to hear from you.
-          </p>
-          <p>
-            - Get in touch with me to discuss how we can work together to bring
-            your vision to life.
-          </p>
-          <p>
-            - Have a question or inquiry? Feel free to reach out to me directly.
-          </p>
-        </div>
+        <Slide direction="left">
+          <div className="w-[600px] flex flex-col items-center justify-center m-auto max-[630px]:w-[400px] max-[400px]:w-[250px]">
+            <p>
+              - Let's connect! Whether you have a question, a project idea, or
+              just want to say hello, I'd love to hear from you.
+            </p>
+            <p>
+              - Get in touch with me to discuss how we can work together to
+              bring your vision to life.
+            </p>
+            <p>
+              - Have a question or inquiry? Feel free to reach out to me
+              directly.
+            </p>
+          </div>
+        </Slide>
 
         <div>
           <img
@@ -85,73 +91,77 @@ const Contact = () => {
           />
         </div>
         <form className={styles.contactForm} onSubmit={handleSubmit}>
-          <div className="relative">
-            <input
-              className="w-[450px] max-[500px]:w-[300px]"
-              onChange={handleFormData}
-              value={formData.name}
-              name="name"
-              placeholder="ENTER YOUR NAME"
-            />
-            {error.name && (
-              <p className="text-[red] absolute left-0 top-full mt-1 ">
-                {error.name}
-              </p>
-            )}
-          </div>
-          <div className="relative">
-            <input
-              className="w-[450px] max-[500px]:w-[300px]"
-              onChange={handleFormData}
-              value={formData.email}
-              name="email"
-              placeholder="ENTER YOUR EMAIL"
-            />
-            {error.email && (
-              <p className="text-[red] absolute left-0 top-full mt-1">
-                {error.email}
-              </p>
-            )}
-          </div>
+          <Fade>
+            <div className="relative">
+              <input
+                className="w-[450px] max-[500px]:w-[300px]"
+                onChange={handleFormData}
+                value={formData.name}
+                name="name"
+                placeholder="ENTER YOUR NAME"
+              />
+              {error.name && (
+                <p className="text-[red] absolute left-0 top-full mt-1 ">
+                  {error.name}
+                </p>
+              )}
+            </div>
+            <div className="relative">
+              <input
+                className="w-[450px] max-[500px]:w-[300px]"
+                onChange={handleFormData}
+                value={formData.email}
+                name="email"
+                placeholder="ENTER YOUR EMAIL"
+              />
+              {error.email && (
+                <p className="text-[red] absolute left-0 top-full mt-1">
+                  {error.email}
+                </p>
+              )}
+            </div>
 
-          <div className="relative">
-            <input
-              className="w-[450px] max-[500px]:w-[300px]"
-              onChange={handleFormData}
-              value={formData.number}
-              name="number"
-              placeholder="PHONE NUMBER"
-            />
-            {error.number && (
-              <p className="text-[red] absolute left-0 top-full mt-1">
-                {error.number}
-              </p>
-            )}
-          </div>
+            <div className="relative">
+              <input
+                className="w-[450px] max-[500px]:w-[300px]"
+                onChange={handleFormData}
+                value={formData.number}
+                name="number"
+                placeholder="PHONE NUMBER"
+              />
+              {error.number && (
+                <p className="text-[red] absolute left-0 top-full mt-1">
+                  {error.number}
+                </p>
+              )}
+            </div>
 
-          <div className="relative">
-            <input
-              onChange={handleFormData}
-              className={`${styles.contactInputMessage} w-[450px] max-[500px]:w-[300px] `}
-              value={formData.message}
-              name="message"
-              placeholder="YOUR MESSAGE"
-            />
-            {error.message && (
-              <p
-                className="text-[red] absolute
+            <div className="relative">
+              <input
+                onChange={handleFormData}
+                className={`${styles.contactInputMessage} w-[450px] max-[500px]:w-[300px] `}
+                value={formData.message}
+                name="message"
+                placeholder="YOUR MESSAGE"
+              />
+              {error.message && (
+                <p
+                  className="text-[red] absolute
            left-0 top-full mt-1"
-              >
-                {error.message}
-              </p>
-            )}
-          </div>
+                >
+                  {error.message}
+                </p>
+              )}
+            </div>
+          </Fade>
 
-          <div className={styles.contactFormSubmit}>
-            <img src={Line} alt="line" />
-            <button className="font-bold cursor-pointer">SUBMIT</button>
-            <img src={Line} alt="line" />
-          </div>
+          <Fade>
+            <div className={styles.contactFormSubmit}>
+              <img src={Line} alt="line" />
+              <button className="font-bold cursor-pointer">SUBMIT</button>
+              <img src={Line} alt="line" />
+            </div>
+          </Fade>
         </form>
 
         {submittion && (

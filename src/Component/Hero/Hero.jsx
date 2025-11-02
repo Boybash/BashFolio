@@ -7,6 +7,7 @@ import MailLogo from "../../assets/sign_5111979.png";
 import WhatsappLogo from "../../assets/whatsapp_3992558.png";
 import { Navigate, useNavigate } from "react-router-dom";
 import LineBreaker from "../../assets/separatorWhite 2.png";
+import { Fade, Slide } from "react-awesome-reveal";
 const Hero = () => {
   function handleGit() {
     window.open(`https://github.com/Boybash`, `_blank`);
@@ -19,6 +20,9 @@ const Hero = () => {
       `https://www.linkedin.com/in/bashir-toheeb-b28976263`,
       `_blank`
     );
+  }
+  function handleEmail() {
+    window.open(`mailto:Toheebibidapo@gmail.com`, `_blank`);
   }
 
   return (
@@ -69,6 +73,7 @@ const Hero = () => {
             />
             <img
               className="animate-bounce  w-[50px] cursor-pointer bg-primary p-[10px] rounded-3xl shadow-[0_0_0_2px_#808080]"
+              onClick={handleEmail}
               src={MailLogo}
               alt="mail"
             />
@@ -83,19 +88,21 @@ const Hero = () => {
         </div>
       </section>
       <section className={`${styles.heroIntro} w-full`}>
-        <div className="p-5">
-          <h1 className="mb-3">Introduction</h1>
-          <p>
-            Hi, I'm BASHIR TOHEEB, a frontend developer with a passion for
-            building responsive, user-friendly interfaces. I have a solid
-            foundation in HTML, CSS, and JavaScript, and I'm experienced in
-            using React to create dynamic, reusable components. I'm always
-            looking to improve my skills and stay up-to-date with the latest
-            trends and technologies in the field. I'm excited to collaborate
-            with others and contribute to innovative projects that make a
-            difference.
-          </p>
-        </div>
+        <Fade>
+          <div className="p-5">
+            <h1 className="mb-3">Introduction</h1>
+            <p>
+              Hi, I'm BASHIR TOHEEB, a frontend developer with a passion for
+              building responsive, user-friendly interfaces. I have a solid
+              foundation in HTML, CSS, and JavaScript, and I'm experienced in
+              using React to create dynamic, reusable components. I'm always
+              looking to improve my skills and stay up-to-date with the latest
+              trends and technologies in the field. I'm excited to collaborate
+              with others and contribute to innovative projects that make a
+              difference.
+            </p>
+          </div>
+        </Fade>
       </section>
     </>
   );

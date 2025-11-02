@@ -6,6 +6,7 @@ import projectOne from "../../assets/wallspeak2.png";
 import projectTwo from "../../assets/rsp.png";
 import Forward from "../../assets/icons8-next-page-100 (1).png";
 import Backward from "../../assets/icons8-back-to-100 (1).png";
+import { Fade } from "react-awesome-reveal";
 
 const Portfolio = () => {
   const [currentpage, setCurrentPage] = useState(1);
@@ -64,64 +65,66 @@ const Portfolio = () => {
   return (
     <>
       <section id="portfolio" className={`${styles.portfolioSection} w-full`}>
-        <div className="mt-10">
-          <h2 className="font-bold tracking-[0.5em]">PORTFOLIO</h2>
-        </div>
-        <div className={styles.portfolioList}>
-          <ul className="hidden">
-            <li>ALL</li>
-            <img src={Line} alt="line" />
-            <li>CODED</li>
-            <img src={Line} alt="line" />
-            <li>DESIGNED</li>
-          </ul>
-        </div>
-        <div className="grid grid-cols-1 mt-10 ">
-          {currentProjects.map((project, index) => (
-            <div key={index} className="bg-[#1A1A1A] rounded-lg p-[30px]">
-              <img src={project.Image} alt={project.Title} />
-              <h3 className="mt-4 font-bold text-white text-xl ">
-                {project.Title}
-              </h3>
-              <p className="text-white mt-3">
-                {expanded[index]
-                  ? project.Description
-                  : project.Description.split(" ").slice(0, 30).join(" ") +
-                    (project.Description.split(" ").length > 50 ? "..." : "")}
-                {project.Description.split(" ").length > 50 && (
-                  <span
-                    className="text-blue-500 cursor-pointer"
-                    onClick={() => handleSeeMore(index)}
-                  >
-                    {expanded[index] ? " See Less" : " See More"}
-                  </span>
-                )}
-              </p>
-              <button
-                onClick={project.handleClick}
-                className="bg-white rounded-md p-4 mt-4 cursor-pointer font-bold"
-              >
-                Check It Out
-              </button>
-            </div>
-          ))}
-          <img
-            className={`${styles.forwardBtn} ${
-              currentpage === totalPages ? styles.notActive : ""
-            } z-2`}
-            src={Forward}
-            alt="Forward"
-            onClick={handleNextpage}
-          />
-          <img
-            className={`${styles.backwardBtn} ${
-              currentpage === 1 ? styles.notActive : ""
-            } z-2`}
-            src={Backward}
-            alt="Backward"
-            onClick={handlePreviousPage}
-          />
-        </div>
+        <Fade>
+          <div className="mt-10">
+            <h2 className="font-bold tracking-[0.5em]">PORTFOLIO</h2>
+          </div>
+          <div className={styles.portfolioList}>
+            <ul className="hidden">
+              <li>ALL</li>
+              <img src={Line} alt="line" />
+              <li>CODED</li>
+              <img src={Line} alt="line" />
+              <li>DESIGNED</li>
+            </ul>
+          </div>
+          <div className="grid grid-cols-1 mt-10 ">
+            {currentProjects.map((project, index) => (
+              <div key={index} className="bg-[#1A1A1A] rounded-lg p-[30px]">
+                <img src={project.Image} alt={project.Title} />
+                <h3 className="mt-4 font-bold text-white text-xl ">
+                  {project.Title}
+                </h3>
+                <p className="text-white mt-3">
+                  {expanded[index]
+                    ? project.Description
+                    : project.Description.split(" ").slice(0, 30).join(" ") +
+                      (project.Description.split(" ").length > 50 ? "..." : "")}
+                  {project.Description.split(" ").length > 50 && (
+                    <span
+                      className="text-blue-500 cursor-pointer"
+                      onClick={() => handleSeeMore(index)}
+                    >
+                      {expanded[index] ? " See Less" : " See More"}
+                    </span>
+                  )}
+                </p>
+                <button
+                  onClick={project.handleClick}
+                  className="bg-white rounded-md p-4 mt-4 cursor-pointer font-bold"
+                >
+                  Check It Out
+                </button>
+              </div>
+            ))}
+            <img
+              className={`${styles.forwardBtn} ${
+                currentpage === totalPages ? styles.notActive : ""
+              } z-2`}
+              src={Forward}
+              alt="Forward"
+              onClick={handleNextpage}
+            />
+            <img
+              className={`${styles.backwardBtn} ${
+                currentpage === 1 ? styles.notActive : ""
+              } z-2`}
+              src={Backward}
+              alt="Backward"
+              onClick={handlePreviousPage}
+            />
+          </div>
+        </Fade>
       </section>
     </>
   );
