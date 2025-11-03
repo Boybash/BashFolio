@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="mb-4 w-full">
+      <footer className="mb-4 max-w-full w-full mx-auto">
         <div className={styles.footerBack}>
           <img
             className="cursor-pointer"

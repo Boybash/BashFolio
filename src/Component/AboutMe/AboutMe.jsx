@@ -8,7 +8,7 @@ const AboutMe = () => {
     <>
       <section
         id="about"
-        className="bg-primary w-full mx-auto p-5 font-montserat"
+        className="bg-primary max-w-full mx-auto p-5 font-montserat w-full overflow-x-hidden"
       >
         <Slide direction="left">
           <div className={styles.aboutmeIntro}>

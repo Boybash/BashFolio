@@ -59,7 +59,10 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact" className={`${styles.contactSection} w-full`}>
+      <section
+        id="contact"
+        className={`${styles.contactSection} max-w-full w-full mx-auto overflow-x-hidden`}
+      >
         <Fade>
           <div>
             <h2 className="font-bold tracking-[0.5em]">CONTACT</h2>

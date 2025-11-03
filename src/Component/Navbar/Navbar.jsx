@@ -30,11 +30,13 @@ const Navbar = () => {
 
   return (
     <>
-      <section className={`${styles.navSection} w-full z-10`}>
+      <section
+        className={`${styles.navSection} max-w-full w-full z-10  mx-auto`}
+      >
         <header>
           <div className={styles.navLogo}>
             <img
-              className="w-[100px] max-[750px]:w-[100px]"
+              className="w-[100px] max-[750px]:w-[100px] max-w-full h-auto "
               src={Logo}
               alt="Logo"
             />

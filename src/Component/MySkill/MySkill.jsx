@@ -16,14 +16,17 @@ import { Slide, Fade } from "react-awesome-reveal";
 const MySkill = () => {
   return (
     <>
-      <section id="skills" className={`${styles.skillsSection} w-full`}>
+      <section
+        id="skills"
+        className={`${styles.skillsSection} max-w-full w-full mx-auto overflow-x-hidden`}
+      >
         <Fade>
           <div>
             <h2 className="font-bold tracking-[0.5em]">SKILLS</h2>
           </div>
         </Fade>
 
-        <div className="flex flex-col justify-center items-center mx-auto my-10">
+        <div className="flex flex-col justify-center items-center mx-auto my-10 max-[500px]:flex max-[500px]:flex-col">
           <div>
             <h3 className="font-bold">USING NOW : </h3>
 

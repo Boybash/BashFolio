@@ -64,7 +64,10 @@ const Portfolio = () => {
 
   return (
     <>
-      <section id="portfolio" className={`${styles.portfolioSection} w-full`}>
+      <section
+        id="portfolio"
+        className={`${styles.portfolioSection} max-w-ful w-full mx-auto overflow-x-hidden`}
+      >
         <Fade>
           <div className="mt-10">
             <h2 className="font-bold tracking-[0.5em]">PORTFOLIO</h2>

@@ -29,7 +29,7 @@ const Hero = () => {
     <>
       <section
         id="top"
-        className={`${styles.heroSection} p-[30px_20px] bg-[linear-gradient(100deg,#d7d7d7_50%,#000000_50%)] w-full max-[700px]:bg-primary max-[700px]:p-[50px] max-[700px]:bg-[url("https://images.unsplash.com/photo-1619995745882-f4128ac82ad6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332")] max-[700px]:cover max-[700px]:bg-no-repeat`}
+        className={`${styles.heroSection} p-[30px_20px] bg-[linear-gradient(100deg,#d7d7d7_50%,#000000_50%)] max-w-full w-full mx-auto max-[700px]:bg-primary max-[700px]:p-[50px] max-[700px]:bg-[url("https://images.unsplash.com/photo-1619995745882-f4128ac82ad6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332")] max-[700px]:cover max-[700px]:bg-no-repeat`}
       >
         <div>
           <div className={styles.heroDetails}>
@@ -87,7 +87,7 @@ const Hero = () => {
           />
         </div>
       </section>
-      <section className={`${styles.heroIntro} w-full`}>
+      <section className={`${styles.heroIntro} w-full overflow-x-hidden`}>
         <Fade>
           <div className="p-5">
             <h1 className="mb-3">Introduction</h1>
