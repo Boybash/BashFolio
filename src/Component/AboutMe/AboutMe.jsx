@@ -38,7 +38,7 @@ const AboutMe = () => {
         <Slide direction="right">
           <div className={`${styles.aboutmeInfo} max-[1100px]:flex-col`}>
             <div className="w-[500px] max-[630px]:flex max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center">
-              <h2 className="font-bold text-xl text-left max-[630px]:mb-2">
+              <h2 className="font-bold text-xl text-center max-[630px]:mb-2">
                 Design
               </h2>
               <p className="max-[630px]:w-[400px] ml-4 max-[400px]:w-[250px]">
@@ -49,7 +49,7 @@ const AboutMe = () => {
             </div>
 
             <div className="w-[500px] max-[630px]:flex max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center">
-              <h2 className="font-bold text-xl max-[630px]:mb-2">
+              <h2 className="font-bold text-xl text-center max-[630px]:mb-2">
                 Development
               </h2>
               <p className="max-[630px]:w-[400px] ml-4  max-[400px]:w-[250px]">
@@ -64,7 +64,7 @@ const AboutMe = () => {
         <Slide direction="right">
           <div className={styles.aboutmeInfos}>
             <div className="w-[500px] max-[630px]:flex max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center">
-              <h2 className="font-bold text-xl max-[630px]:mb-2">
+              <h2 className="font-bold text-xl text-center max-[630px]:mb-2">
                 Maintenance & Updates
               </h2>
               <p className="max-[630px]:w-[400px] ml-4  max-[400px]:w-[250px]">
