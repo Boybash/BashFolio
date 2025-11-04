@@ -41,7 +41,7 @@ const AboutMe = () => {
               <h2 className="font-bold text-xl text-left max-[630px]:mb-2">
                 Design
               </h2>
-              <p className="max-[630px]:w-[400px] max-[400px]:w-[250px]">
+              <p className="max-[630px]:w-[400px] ml-4 max-[400px]:w-[250px]">
                 I can design the site based on your needs and suggestions. I can
                 also design the site from scratch and consult you during the
                 job.
@@ -52,7 +52,7 @@ const AboutMe = () => {
               <h2 className="font-bold text-xl max-[630px]:mb-2">
                 Development
               </h2>
-              <p className="max-[630px]:w-[400px] max-[400px]:w-[250px]">
+              <p className="max-[630px]:w-[400px] ml-4  max-[400px]:w-[250px]">
                 I offer custom website development services, working either from
                 your specifications or starting from scratch with regular
                 consultations to ensure your vision is realized.
@@ -67,7 +67,7 @@ const AboutMe = () => {
               <h2 className="font-bold text-xl max-[630px]:mb-2">
                 Maintenance & Updates
               </h2>
-              <p className="max-[630px]:w-[400px] max-[400px]:w-[250px]">
+              <p className="max-[630px]:w-[400px] ml-4  max-[400px]:w-[250px]">
                 I can maintain and update your existing site to ensure it
                 remains secure, efficient, and aligned with your evolving needs.
                 I can also implement new features and functionalities as

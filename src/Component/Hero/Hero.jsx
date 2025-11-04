@@ -43,7 +43,7 @@ const Hero = () => {
             <h1 className="hidden max-[700px]:block font-bold font-montserat text-2xl text-primary max-[385px]:text-xl">
               My name is Toheeb
             </h1>
-            <h3 className="hidden max-[700px]:block font-bold text-4xl text-primary max-[450px]:text-3xl max-[385px]:text-2xl">
+            <h3 className="hidden max-[700px]:block font-bold text-4xl text-primary max-[450px]:text-3xl max-[385px]:text-2xl max-[320px]:text-xs">
               I’M A DEVELOPER
             </h3>
             <img
@@ -90,7 +90,7 @@ const Hero = () => {
       <section className={`${styles.heroIntro} w-full overflow-x-hidden`}>
         <Fade>
           <div className="p-5">
-            <h1 className="mb-3">Introduction</h1>
+            <h1 className="mb-3 font-bold text-2xl">Introduction</h1>
             <p>
               Hi, I'm BASHIR TOHEEB, a frontend developer with a passion for
               building responsive, user-friendly interfaces. I have a solid

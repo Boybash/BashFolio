@@ -11,7 +11,7 @@ import { Fade } from "react-awesome-reveal";
 const Portfolio = () => {
   const [currentpage, setCurrentPage] = useState(1);
   const [expanded, setExpanded] = useState({});
-  const projectsPerPage = 1;
+  const projectsPerPage = 2;
   const projects = [
     {
       Image: projectOne,
@@ -81,7 +81,7 @@ const Portfolio = () => {
               <li>DESIGNED</li>
             </ul>
           </div>
-          <div className="grid grid-cols-1 mt-10 ">
+          <div className="grid grid-cols-1 mt-10 gap-5 ">
             {currentProjects.map((project, index) => (
               <div key={index} className="bg-[#1A1A1A] rounded-lg p-[30px]">
                 <img src={project.Image} alt={project.Title} />
