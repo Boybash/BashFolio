@@ -6,6 +6,7 @@ import projectOne from "../../assets/wallspeak2.png";
 import projectTwo from "../../assets/rsp.png";
 import projectThree from "../../assets/feelathome.png";
 import Forward from "../../assets/icons8-next-page-100 (1).png";
+import projectFour from "../../assets/Lonas.png";
 import Backward from "../../assets/icons8-back-to-100 (1).png";
 import { Fade } from "react-awesome-reveal";
 
@@ -14,6 +15,13 @@ const Portfolio = () => {
   const [expanded, setExpanded] = useState({});
   const projectsPerPage = 2;
   const projects = [
+    {
+      Image: projectFour,
+      Title: "Lonas Fintech",
+      Description:
+        "This Fintech solution is a high-performance Investment & Loan Calculator designed to bring transparency to digital lending. Recognizing that financial clarity is key to user trust, I developed a synchronized dual-input system that allows users to toggle between range sliders and text inputs with real-time state updates.The application features dynamic currency formatting, automatically injecting commas as users type to enhance readability and eliminate entry errors. Built with React and Tailwind CSS, the platform calculates complex interest yields and monthly payouts instantly, delivering a seamless,zero-latency experience that empowers users to make informed financial decisions with confidence.",
+      handleClick: handleLonas,
+    },
     {
       Image: projectThree,
       Title: "Feelathome",
@@ -64,6 +72,9 @@ const Portfolio = () => {
   }
   function handleFeelathome() {
     window.open(`https://feelathomes.vercel.app/`, `_blank`);
+  }
+  function handleLonas() {
+    window.open(`https://lonas.netlify.app/`, `_blank`);
   }
 
   const handleSeeMore = (index) => {
