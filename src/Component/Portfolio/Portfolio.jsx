@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import projectOne from "../../assets/wallspeak2.png";
 import projectTwo from "../../assets/rsp.png";
 import projectThree from "../../assets/feelathome.png";
+import projectFive from "../../assets/chuks.png";
 import Forward from "../../assets/icons8-next-page-100 (1).png";
 import projectFour from "../../assets/Lonas.png";
 import Backward from "../../assets/icons8-back-to-100 (1).png";
@@ -13,7 +14,7 @@ import { Fade } from "react-awesome-reveal";
 const Portfolio = () => {
   const [currentpage, setCurrentPage] = useState(1);
   const [expanded, setExpanded] = useState({});
-  const projectsPerPage = 2;
+  const projectsPerPage = 4;
   const projects = [
     {
       Image: projectFour,
@@ -28,6 +29,13 @@ const Portfolio = () => {
       Description:
         "Real Estate Platform (Rent & Sale) A full-featured, user-centric real estate web application connecting Landlords, Agents, and Tenants. This platform allows property owners/agents to effortlessly list and manage properties for rent or sale, and provides tenants with a streamlined experience for finding, inspecting, and securing their next home.Key Features This project is designed to handle the entire property lifecycle, from listing to payment.For Landlords & Agents 🔑 Property Listing: Easily post properties for either rent or sale.Dynamic Editing: Full control over listings, allowing for updates (price, description, photos, etc.) at any time.Intuitive Dashboard: A personalized space to manage all active and archived properties.For Tenants & Buyers 🔎 Property Search: Browse and filter available properties based on location, price, type, and status (rent/sale).Inspection Booking: Conveniently schedule and book property viewings directly through the platform.Secure Payment: Integrated functionality to pay for rentals or deposits after booking/agreement.Core Platform Features 🛠️ User Authentication: Secure user login/registration powered by Firebase.User Roles: Distinct experiences and permissions for Landlords/Agents versus Tenants.Tech Stack This project leverages modern, scalable technologies to ensure a robust and fast user experience. Category,Technology,Purpose Frontend,[React],Building the user interface. Backend/Runtime,[Node.js],Server-side logic and APIs. Database/Auth,Firebase,User authentication, database (Firestore/Realtime DB), and potentially storage.Styling,[Tailwind CSS],Responsive and modern design.",
       handleClick: handleFeelathome,
+    },
+    {
+      Image: projectFive,
+      Title: "Chuks KItchen",
+      Description:
+        "Transforming the complexity of e-commerce into a simple, elegant journey: that was the mission behind Chuks Kitchen. I tackled the challenges of real-time state management using the React Context API to create a living, breathing cart experience. Every piece of data is protected by robust Yup validation, and every page is optimized for speed through intelligent code-splitting. This project is a testament to my commitment to building apps that are as reliable as they are beautiful.",
+      handleClick: handleChuksKitchen,
     },
     {
       Image: projectOne,
@@ -50,7 +58,7 @@ const Portfolio = () => {
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projects.slice(
     indexOfFirstProject,
-    indexOfLastProject
+    indexOfLastProject,
   );
 
   function handleNextpage() {
@@ -75,6 +83,9 @@ const Portfolio = () => {
   }
   function handleLonas() {
     window.open(`https://lonas.netlify.app/`, `_blank`);
+  }
+  function handleChuksKitchen() {
+    window.open(`https://chuks-kitchens.netlify.app/`, `_blank`);
   }
 
   const handleSeeMore = (index) => {
