@@ -148,7 +148,7 @@ const Portfolio = () => {
                 </p>
                 <button
                   onClick={project.handleClick}
-                  className="bg-white rounded-md p-4 mt-4 cursor-pointer font-bold"
+                  className="bg-[#d7d7d7] rounded-md p-4 mt-4 cursor-pointer font-bold"
                 >
                   Check It Out
                 </button>
