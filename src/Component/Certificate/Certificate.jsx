@@ -9,7 +9,7 @@ export default function Certificate() {
       image: CertLogo,
       status: "Internship",
       role: "Frontend Developer",
-      date: "April 2026",
+      date: "May 2026",
       expires: "No Expiration",
       link: "https://truemindsltd.com/",
       pdf: "/public/internship-cert.pdf",
