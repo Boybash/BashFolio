@@ -12,7 +12,7 @@ export default function Certificate() {
       date: "May 2026",
       expires: "No Expiration",
       link: "https://truemindsltd.com/",
-      pdf: "/public/internship-cert.pdf",
+      pdf: "/internship-cert.pdf",
     },
   ];
   return (
