@@ -6,6 +6,7 @@ import projectOne from "../../assets/wallspeak2.png";
 import projectTwo from "../../assets/rsp.png";
 import projectThree from "../../assets/feelathome.png";
 import projectFive from "../../assets/chuks.png";
+import projectSix from "../../assets/Truemind.png";
 import Forward from "../../assets/icons8-next-page-100 (1).png";
 import projectFour from "../../assets/Lonas.png";
 import Backward from "../../assets/icons8-back-to-100 (1).png";
@@ -14,8 +15,15 @@ import { Fade } from "react-awesome-reveal";
 const Portfolio = () => {
   const [currentpage, setCurrentPage] = useState(1);
   const [expanded, setExpanded] = useState({});
-  const projectsPerPage = 4;
+  const projectsPerPage = 5;
   const projects = [
+    {
+      Image: projectSix,
+      Title: "Trueminds Learning Management System",
+      Description:
+        "This is a specialized Learning Management System (LMS) designed for TrueMinds Team Hotel. It serves as a dedicated digital hub for employee training, onboarding, and professional development. Built as a high-performance web app, the platform streamlines educational resources and tracks progress to enhance team operational efficiency and skill-building. Key features include: Personalized Learning Paths: Tailored course recommendations based on individual roles and skill levels. Interactive Content: Engaging multimedia lessons, quizzes, and assignments to facilitate effective learning. Progress Tracking: Real-time dashboards for employees and managers to monitor course completion and performance. Seamless Integration: Compatibility with existing HR systems for smooth user management and reporting. This LMS is a testament to my ability to create robust, user-centric applications that drive organizational growth and employee success. This project was completed during my internship at Truemind Innovation Limited, for which I received a certification of completion.",
+      handleClick: handleTruemind,
+    },
     {
       Image: projectFour,
       Title: "Lonas Fintech",
@@ -34,7 +42,7 @@ const Portfolio = () => {
       Image: projectFive,
       Title: "Chuks KItchen",
       Description:
-        "Transforming the complexity of e-commerce into a simple, elegant journey: that was the mission behind Chuks Kitchen. I tackled the challenges of real-time state management using the React Context API to create a living, breathing cart experience. Every piece of data is protected by robust Yup validation, and every page is optimized for speed through intelligent code-splitting. This project is a testament to my commitment to building apps that are as reliable as they are beautiful.",
+        "Transforming the complexity of e-commerce into a simple, elegant journey: that was the mission behind Chuks Kitchen. I tackled the challenges of real-time state management using the React Context API to create a living, breathing cart experience. Every piece of data is protected by robust Yup validation, and every page is optimized for speed through intelligent code-splitting. This project is a testament to my commitment to building apps that are as reliable as they are beautiful. This project was completed during my internship at Truemind Innovation Limited, for which I received a certification of completion.",
       handleClick: handleChuksKitchen,
     },
     {
@@ -86,6 +94,9 @@ const Portfolio = () => {
   }
   function handleChuksKitchen() {
     window.open(`https://chuks-kitchens.netlify.app/`, `_blank`);
+  }
+  function handleTruemind() {
+    window.open(`https://trueminds-lms-teamhotel-tqmd.vercel.app/`, `_blank`);
   }
 
   const handleSeeMore = (index) => {
