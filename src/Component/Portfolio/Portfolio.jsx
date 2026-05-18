@@ -125,11 +125,11 @@ const Portfolio = () => {
               <li>DESIGNED</li>
             </ul>
           </div>
-          <div className="grid grid-cols-1 mt-10 gap-5 ">
+          <div className="grid grid-cols-1 mt-10 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {currentProjects.map((project, index) => (
               <div key={index} className="bg-[#1A1A1A] rounded-lg p-[30px]">
                 <img src={project.Image} alt={project.Title} />
-                <h3 className="mt-4 font-bold text-white text-xl ">
+                <h3 className="mt-4 font-bold text-white text-xl truncate">
                   {project.Title}
                 </h3>
                 <p className="text-white mt-3">
@@ -148,7 +148,7 @@ const Portfolio = () => {
                 </p>
                 <button
                   onClick={project.handleClick}
-                  className="bg-[#d7d7d7] rounded-md p-4 mt-4 cursor-pointer font-bold"
+                  className="bg-[#d7d7d7] rounded-md p-3 mt-4 cursor-pointer font-bold"
                 >
                   Check It Out
                 </button>
